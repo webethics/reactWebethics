@@ -9,7 +9,7 @@ export default {
         text: 'NEW',
       },
     },
-    {
+    /* {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
@@ -18,11 +18,11 @@ export default {
       },
       class: ''             // optional class names space delimited list for title item ex: "text-center"
     },
-    {
+	{
       name: 'Colors',
       url: '/theme/colors',
       icon: 'icon-drop',
-    },
+    }, 
     {
       name: 'Typography',
       url: '/theme/typography',
@@ -36,6 +36,7 @@ export default {
         attributes: {},
       },
     },
+	*/
     {
       name: 'Base',
       url: '/base',
@@ -122,8 +123,8 @@ export default {
           icon: 'icon-puzzle',
         },
       ],
-    },
-    {
+    }, 
+	{
       name: 'Buttons',
       url: '/buttons',
       icon: 'icon-cursor',
@@ -150,7 +151,7 @@ export default {
         },
       ],
     },
-    {
+	{
       name: 'Charts',
       url: '/charts',
       icon: 'icon-pie-chart',
@@ -190,7 +191,7 @@ export default {
         },
       ],
     },
-    {
+	{
       name: 'Notifications',
       url: '/notifications',
       icon: 'icon-bell',
@@ -212,7 +213,7 @@ export default {
         },
       ],
     },
-    {
+	{
       name: 'Widgets',
       url: '/widgets',
       icon: 'icon-calculator',
@@ -220,7 +221,7 @@ export default {
         variant: 'info',
         text: 'NEW',
       },
-    },
+    },  
     {
       divider: true,
     },
@@ -255,18 +256,23 @@ export default {
         },
       ],
     },
-    {
-      name: 'Download CoreUI',
-      url: 'http://coreui.io/react/',
-      icon: 'icon-cloud-download',
-      class: 'mt-auto',
-      variant: 'success',
-    },
-    {
-      name: 'Try CoreUI PRO',
-      url: 'http://coreui.io/pro/react/',
-      icon: 'icon-layers',
-      variant: 'danger',
+	 
+	 {
+      name: 'Users',
+      url: '/users',
+      icon: 'icon-speedometer',
+	  children: [
+        {
+          name: 'Users Listing',
+          url: '/users',
+          icon: 'icon-puzzle',
+        }
+		]
+    }, 
+	 {
+      name: 'Add Users',
+      url: '/add-user',
+      icon: 'icon-speedometer', 
     },
   ],
 };
