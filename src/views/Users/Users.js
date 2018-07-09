@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Badge, Card, CardBody, CardHeader, Col, Row, Table, Pagination, PaginationItem, PaginationLink } from 'reactstrap';
+import { AppSwitch } from '@coreui/react'
 
 import usersData from './UsersData'
 
@@ -14,14 +15,15 @@ function UserRow(props) {
           status === 'Banned' ? 'danger' :
             'primary'
   }
+  
 
   return (
     <tr key={user.id.toString()}>
         <th scope="row"><a href={userLink}>{user.id}</a></th>
-        <td><a href={userLink}>{user.name}</a></td>
-        <td>{user.registered}</td>
+        <td><a href={userLink}>{user.name}</a></td> 
         <td>{user.role}</td>
-        <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge></td>
+        <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge> <AppSwitch className={'mx-1'} variant={'pill'} color={'primary'} checked /></td> 
+		<td><a href={userLink}> <i className="icon-pencil icons font"></i></a> <a href={userLink}> <i className="icon-close icons font"></i></a></td> 
     </tr>
   )
 }
@@ -33,7 +35,7 @@ class Users extends Component {
     const userList = usersData.filter((user) => user.id < 10)
 
     return (
-      <div className="animated fadeIn">
+      <div className="animated fadeIn usr_list">
         <Row>
           <Col lg="12">
             <Card>
@@ -46,9 +48,9 @@ class Users extends Component {
                     <tr>
                       <th scope="col">Id</th>
                       <th scope="col">Name</th>
-                      <th scope="col">Registered</th>
                       <th scope="col">Role</th>
-                      <th scope="col">Status</th>
+                      <th scope="col">Status</th> 
+                      <th scope="col">Action</th>
                     </tr>
                   </thead>
                   <tbody>

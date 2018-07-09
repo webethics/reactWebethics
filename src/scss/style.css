@@ -9942,10 +9942,9 @@ body {
 html body .app.flex-row.align-items-center {
   height: 100vh; }
 
-.table.table-striped.table-hover td {
-    text-transform: capitalize;
-} 
-
-.add_usr .card-footer .btn{
-    margin-right: 6px;
+.add_usr .card-footer .btn {
+    margin-right: 5px;
+}
+.usr_list .badge{
+	width:52px;
 }
