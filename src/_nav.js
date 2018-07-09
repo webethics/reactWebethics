@@ -266,13 +266,13 @@ export default {
           name: 'Users Listing',
           url: '/users',
           icon: 'icon-puzzle',
-        }
+        }, 
+		 {
+		  name: 'Add Users',
+		  url: '/add-user',
+		  icon: 'icon-speedometer', 
+		}
 		]
-    }, 
-	 {
-      name: 'Add Users',
-      url: '/add-user',
-      icon: 'icon-speedometer', 
     },
   ],
 };
