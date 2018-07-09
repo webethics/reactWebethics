@@ -5,7 +5,7 @@ import { AppSwitch } from '@coreui/react'
 import usersData from './UsersData'
 
 function UserRow(props) {
-  const user = props.user 
+  const user = props.user
   const userLink = `#/users/${user.id}`
 
   const getBadge = (status) => {
@@ -22,7 +22,7 @@ function UserRow(props) {
         <th scope="row"><a href={userLink}>{user.id}</a></th>
         <td><a href={userLink}>{user.name}</a></td> 
         <td>{user.role}</td>
-        <td><Badge href={userLink} color={getBadge(user.status)}>{user.status}</Badge> <AppSwitch className={'mx-1'} variant={'pill'} color={'primary'} checked /></td> 
+        <td><AppSwitch className={'mx-1'} variant={'pill'} color={'primary'} checked /></td> 
 		<td><a href={userLink}> <i className="icon-pencil icons font"></i></a> <a href={userLink}> <i className="icon-close icons font"></i></a></td> 
     </tr>
   )
