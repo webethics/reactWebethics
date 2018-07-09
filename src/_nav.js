@@ -37,7 +37,7 @@ export default {
       },
     },
 	*/
-    {
+   /*  {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
@@ -255,7 +255,7 @@ export default {
           icon: 'icon-star',
         },
       ],
-    },
+    }, */
 	 
 	 {
       name: 'Users',
