@@ -5,7 +5,7 @@ import { AppSwitch } from '@coreui/react'
 import usersData from './UsersData'
 
 function UserRow(props) {
-  const user = props.user
+  const user = props.user 
   const userLink = `#/users/${user.id}`
 
   const getBadge = (status) => {
