@@ -272,5 +272,20 @@ export default {
 		}
 		]
     },
+	 {
+      name: 'Categories',
+      url: '/categories',
+      /* icon: 'icon-speedometer', */
+	  children: [
+        {
+          name: 'Categories Listing',
+          url: '/categories', 
+        }, 
+		 {
+		  name: 'Add Category',
+		  url: '/add-category', 
+		}
+		]
+    },
   ],
 };

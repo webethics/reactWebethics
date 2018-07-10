@@ -192,6 +192,26 @@ const UserDetails = Loadable({
   loading: Loading,
 });
 
+const Categories = Loadable({
+  loader: () => import('./views/Categories/Categories'),
+  loading: Loading,
+});
+
+const Category = Loadable({
+  loader: () => import('./views/Categories/Category'),
+  loading: Loading,
+});
+
+const AddCategory = Loadable({
+  loader: () => import('./views/Categories/AddCategory'),
+  loading: Loading,
+});
+
+
+const UpdateCategory = Loadable({
+  loader: () => import('./views/Categories/UpdateCategory'),
+  loading: Loading,
+});
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -239,6 +259,10 @@ const routes = [
   { path: '/users/:id', exact: true, name: 'User Details', component: User }, 
   { path: '/add-user', exact: true,  name: 'Add User', component: AddUser },
   { path: '/users/details/:id', exact: true,  name: 'Details', component: UserDetails },
+  { path: '/categories', exact: true,  name: 'Categories', component: Categories },
+  { path: '/categories/:id', exact: true, name: 'Category Details', component: Category }, 
+  { path: '/add-category', exact: true, name: 'Add Category', component: AddCategory }, 
+  { path: '/categories/update-category/:id', exact: true, name: 'Update Category', component: UpdateCategory }, 
 ];
 
 export default routes;
