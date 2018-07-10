@@ -32,7 +32,7 @@ class ResetPassword extends Component {
                     <Row>
                       <Col xs="6">
                         <Button color="primary" className="px-4">Reset</Button>
-                      </Col> 
+                      </Col>
                     </Row>
                   </CardBody>
                 </Card> 
