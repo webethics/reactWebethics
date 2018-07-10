@@ -9945,5 +9945,8 @@ body {
 .add_usr .badge {
   width: 52px; }
 
+.usr_list .icon-close {
+  color: #20a8d8; }
+
 html body .app.flex-row.align-items-center {
   height: 100vh; }

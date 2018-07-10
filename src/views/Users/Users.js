@@ -8,6 +8,7 @@ function UserRow(props) {
   const user = props.user
   const userLink = `#/users/${user.id}`
   const userDetailLink = `#/users/details/${user.id}`
+  const nolink = `#`
 
   const getBadge = (status) => {
     return status === 'Active' ? 'success' :
@@ -24,7 +25,7 @@ function UserRow(props) {
         <td><a href={userLink}>{user.name}</a></td> 
         <td>{user.role}</td>
         <td><AppSwitch className={'mx-1'} variant={'pill'} color={'primary'} checked /></td> 
-		<td><a href={userDetailLink}> <i className="icon-pencil icons font"></i></a> <a href={userLink}> <i className="icon-close icons font"></i></a></td> 
+		<td><a href={userDetailLink}> <i className="icon-pencil icons font"></i></a> <i className="icon-close icons font"></i></td> 
     </tr>
   )
 }
