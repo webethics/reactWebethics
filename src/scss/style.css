@@ -9939,7 +9939,7 @@ body {
 .app-header .navbar-nav .dropdown-menu-right {
   right: auto; }
 
-.add_usr .card-footer .btn {
+.add_usr .card-footer .btn, .usr_profile .card-footer .btn {
   margin-right: 5px; }
 
 .add_usr .badge {

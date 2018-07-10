@@ -173,47 +173,60 @@ const Widgets = Loadable({
 });
 
 const Users = Loadable({
-  loader: () => import('./views/Users/Users'),
+  loader: () => import('./views/Users/Users/'),
   loading: Loading,
 });
 
-const User = Loadable({
-  loader: () => import('./views/Users/User'),
+ const User = Loadable({
+  loader: () => import('./views/Users/User/'),
   loading: Loading,
 });
 
 const AddUser = Loadable({
-  loader: () => import('./views/AddUser'),
+  loader: () => import('./views/Users/AddUser'),
   loading: Loading,
 });
-
+/* 
 const UserDetails = Loadable({
   loader: () => import('./views/Users/Details'),
   loading: Loading,
-});
+});  */
 
+const UpdateUser = Loadable({
+  loader: () => import('./views/Users/UpdateUser'),
+  loading: Loading,
+}); 
+ 
 const Categories = Loadable({
-  loader: () => import('./views/Categories/Categories'),
+  loader: () => import('./views/Categories/Categories/'),
   loading: Loading,
 });
-
-const Category = Loadable({
-  loader: () => import('./views/Categories/Category'),
-  loading: Loading,
-});
-
+ 
 const AddCategory = Loadable({
-  loader: () => import('./views/Categories/AddCategory'),
+  loader: () => import('./views/Categories/AddCategory/'),
   loading: Loading,
 });
-
-
+ 
 const UpdateCategory = Loadable({
-  loader: () => import('./views/Categories/UpdateCategory'),
+  loader: () => import('./views/Categories/UpdateCategory/'),
   loading: Loading,
 });
+ 
+const Category = Loadable({
+  loader: () => import('./views/Categories/Category/'),
+  loading: Loading,
+});
+   
+const ResetPassword = Loadable({
+  loader: () => import('./views/Pages/ResetPassword/'),
+  loading: Loading,
+});   
 
-
+const UserProfile = Loadable({
+  loader: () => import('./views/Pages/UserProfile/'),
+  loading: Loading,
+});
+  
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
@@ -255,14 +268,17 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/charts', name: 'Charts', component: Charts },
-  { path: '/users', exact: true,  name: 'Users', component: Users },
-  { path: '/users/:id', exact: true, name: 'User Details', component: User }, 
-  { path: '/add-user', exact: true,  name: 'Add User', component: AddUser },
-  { path: '/users/details/:id', exact: true,  name: 'Details', component: UserDetails },
-  { path: '/categories', exact: true,  name: 'Categories', component: Categories },
-  { path: '/categories/:id', exact: true, name: 'Category Details', component: Category }, 
-  { path: '/add-category', exact: true, name: 'Add Category', component: AddCategory }, 
-  { path: '/categories/update-category/:id', exact: true, name: 'Update Category', component: UpdateCategory }, 
+  { path: '/users/users', exact: true,  name: 'Users', component: Users },
+  { path: '/users/user/:id', exact: true, name: 'User Details', component: User }, 
+  { path: '/users/add-user', exact: true,  name: 'Add User', component: AddUser },
+  { path: '/users/update-user/:id', exact: true,  name: 'Update User', component: UpdateUser },
+  { path: '/categories/categories', exact: true,  name: 'Categories', component: Categories },
+  { path: '/categories/add-category', exact: true,  name: 'Categories', component: AddCategory },
+  { path: '/categories/update-category/:id', exact: true,  name: 'Update Categories', component: UpdateCategory },
+  { path: '/categories/category/:id', exact: true,  name: 'Category Details', component: Category },
+  { path: '/reset-password', exact: true,  name: 'Reset Password', component: ResetPassword },
+  { path: '/user-profile', exact: true,  name: 'User Profile', component: UserProfile },
+  
 ];
 
 export default routes;

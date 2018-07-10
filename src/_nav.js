@@ -255,36 +255,35 @@ export default {
           icon: 'icon-star',
         },
       ],
-    },   */
-	 
+    },    */
 	 {
       name: 'Users',
       url: '/users',
-      /* icon: 'icon-speedometer', */
+      icon: 'icon-speedometer',
 	  children: [
         {
           name: 'Users Listing',
-          url: '/users', 
+          url: '/users/users', 
         }, 
 		 {
 		  name: 'Add Users',
-		  url: '/add-user', 
+		  url: '/users/add-user', 
 		}
 		]
     },
 	 {
       name: 'Categories',
       url: '/categories',
-      /* icon: 'icon-speedometer', */
+      icon: 'icon-speedometer',
 	  children: [
         {
           name: 'Categories Listing',
-          url: '/categories', 
+          url: '/categories/categories', 
         }, 
 		 {
 		  name: 'Add Category',
-		  url: '/add-category', 
-		}
+		  url: '/categories/add-category/', 
+		} 
 		]
     },
   ],
