@@ -26,7 +26,7 @@ class Category extends Component {
                         categoryDetails.map(([key, value]) => {
                           return (
                             <tr>
-                              <td>{`${key}`}</td>
+                              <td class="row_head"  >{`${key}`}</td>
                               <td><strong>{value}</strong></td>
                             </tr>
                           )

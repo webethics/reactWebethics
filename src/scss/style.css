@@ -9948,5 +9948,8 @@ body {
 .usr_list .icon-close {
   color: #20a8d8; }
 
+.row_head {
+  text-transform: capitalize; }
+
 html body .app.flex-row.align-items-center {
   height: 100vh; }
