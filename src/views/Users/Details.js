@@ -24,7 +24,7 @@ import {
 	Dropdown
  } from 'reactstrap'; 
  
-class AddUser extends Component {  
+class UserDetails extends Component {  
 	render() {
 		return (
 		  <div className="animated fadeIn add_usr">
@@ -32,7 +32,7 @@ class AddUser extends Component {
 			  <Col md="12">
 				<Card>
 				  <CardHeader>
-					<strong>Add User</strong>
+					<strong>Update User</strong>
 				  </CardHeader>
 				  <CardBody>
 					<Form action="" method="post" encType="multipart/form-data" className="form-horizontal">
@@ -41,7 +41,7 @@ class AddUser extends Component {
 						  <Label htmlFor="text-input">Full Name</Label>
 						</Col>
 						<Col xs="12" md="9">
-						  <Input type="text" id="text-input" name="text-input" placeholder="Enter Name" /> 
+						  <Input type="text" id="text-input" name="text-input" placeholder="Enter Name" value="John Doe" /> 
 						</Col>
 					  </FormGroup>
 					   <FormGroup row>
@@ -49,7 +49,7 @@ class AddUser extends Component {
 						  <Label htmlFor="text-input">Username</Label>
 						</Col>
 						<Col xs="12" md="9">
-						  <Input type="text" id="text-input" name="text-input" placeholder="Username" />
+						  <Input type="text" id="text-input" name="text-input" placeholder="Username" value="johndoe" />
 						</Col>
 					  </FormGroup>
 					  <FormGroup row>
@@ -57,25 +57,9 @@ class AddUser extends Component {
 						  <Label htmlFor="email-input">User Email</Label>
 						</Col>
 						<Col xs="12" md="9">
-						  <Input type="email" id="email-input" name="email-input" placeholder="Enter Email" autoComplete="email"/> 
+						  <Input type="email" id="email-input" name="email-input" placeholder="Enter Email" autoComplete="email" value="johndoe@gmail.com" /> 
 						</Col>
-					  </FormGroup>
-					  <FormGroup row>
-						<Col md="3">
-						  <Label htmlFor="password-input">Password</Label>
-						</Col>
-						<Col xs="12" md="9">
-						  <Input type="password" id="password-input" name="password-input" placeholder="Password" autoComplete="new-password" /> 
-						</Col>
-					  </FormGroup>   
-					   <FormGroup row>
-						<Col md="3">
-						  <Label htmlFor="password-input">Confirm Password</Label>
-						</Col>
-						<Col xs="12" md="9">
-						  <Input type="password" id="re-password-input" name="re-password-input" placeholder="Confirm Password" autoComplete="new-password" /> 
-						</Col>
-					  </FormGroup>   
+					  </FormGroup> 
 					  <FormGroup row>
 						<Col md="3">
 						  <Label>Gender</Label>
@@ -101,7 +85,7 @@ class AddUser extends Component {
 							<option value="">Select Role</option>
 							<option value="customer">Customer</option>
 							<option value="deliverer">Deliverer</option>
-							<option value="brewiere">Brewiere</option>
+							<option value="brewiere" selected="selected">Brewiere</option>
 							<option value="super admin">Super Admin</option> 
 						  </Input>
 						 </FormGroup>
@@ -112,7 +96,7 @@ class AddUser extends Component {
 						  <Label htmlFor="text-input">Contact Number</Label>
 						</Col>
 						<Col xs="12" md="3">
-						  <Input type="text" id="text-input" name="text-input" placeholder="Enter Contact Number" />
+						  <Input type="text" id="text-input" name="text-input" placeholder="Enter Contact Number" value="9812345670" />
 						</Col>
 					  </FormGroup>
 					   <FormGroup row>
@@ -145,4 +129,4 @@ class AddUser extends Component {
 	}
 }
 
-export default AddUser;
+export default UserDetails;

@@ -18,7 +18,7 @@ class Register extends Component {
                         <i className="icon-user"></i>
                       </InputGroupText>
                     </InputGroupAddon>
-                    <Input type="text" placeholder="Fullname" />
+                    <Input type="text" placeholder="Full Name" />
                   </InputGroup>
                   <InputGroup className="mb-3">
                     <InputGroupAddon addonType="prepend">

@@ -4,12 +4,12 @@ export default {
       name: 'Dashboard',
       url: '/dashboard',
       icon: 'icon-speedometer',
-      badge: {
+      /* badge: {
         variant: 'info',
         text: 'NEW',
-      },
+      }, */
     },
-    /* {
+   /*  {
       title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
@@ -36,8 +36,8 @@ export default {
         attributes: {},
       },
     },
-	*/
-   /*  {
+	
+   {
       name: 'Base',
       url: '/base',
       icon: 'icon-puzzle',
@@ -255,22 +255,20 @@ export default {
           icon: 'icon-star',
         },
       ],
-    }, */
+    },   */
 	 
 	 {
       name: 'Users',
       url: '/users',
-      icon: 'icon-speedometer',
+      /* icon: 'icon-speedometer', */
 	  children: [
         {
           name: 'Users Listing',
-          url: '/users',
-          icon: 'icon-puzzle',
+          url: '/users', 
         }, 
 		 {
 		  name: 'Add Users',
-		  url: '/add-user',
-		  icon: 'icon-speedometer', 
+		  url: '/add-user', 
 		}
 		]
     },

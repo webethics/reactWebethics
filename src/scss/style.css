@@ -9939,9 +9939,11 @@ body {
 .app-header .navbar-nav .dropdown-menu-right {
   right: auto; }
 
+.add_usr .card-footer .btn {
+  margin-right: 5px; }
+
+.add_usr .badge {
+  width: 52px; }
+
 html body .app.flex-row.align-items-center {
   height: 100vh; }
-
-.add_usr .card-footer .btn {
-    margin-right: 5px;
-} 
