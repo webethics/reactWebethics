@@ -32,10 +32,7 @@ class ResetPassword extends Component {
                     <Row>
                       <Col xs="6">
                         <Button color="primary" className="px-4">Reset</Button>
-                      </Col>
-                      <Col xs="6" className="text-right">
-                        <Button color="link" className="px-0" href="#/login">Login</Button>
-                      </Col>
+                      </Col> 
                     </Row>
                   </CardBody>
                 </Card> 
