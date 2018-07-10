@@ -7,9 +7,9 @@ class ResetPassword extends Component {
       <div className="flex-row align-items-center">
         <Container>
           <Row className="justify-content-center">
-            <Col md="8">
+            <Col md="8" xs="12">
               <CardGroup>
-                <Card className="p-4">
+                <Card>
                   <CardBody>
                     <h1>Reset Password</h1>
                     <p className="text-muted"></p>
@@ -32,7 +32,7 @@ class ResetPassword extends Component {
                     <Row>
                       <Col xs="6">
                         <Button color="primary" className="px-4">Reset</Button>
-                      </Col>
+                      </Col> 
                     </Row>
                   </CardBody>
                 </Card> 
