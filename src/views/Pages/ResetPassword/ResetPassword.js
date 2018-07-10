@@ -11,7 +11,7 @@ class ResetPassword extends Component {
               <CardGroup>
                 <Card>
                   <CardBody>
-                    <h1>Reset Password</h1>
+                    <h2>Reset Password</h2>
                     <p className="text-muted"></p>
                     <InputGroup className="mb-4">
                       <InputGroupAddon addonType="prepend">
