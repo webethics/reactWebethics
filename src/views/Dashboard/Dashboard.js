@@ -583,7 +583,7 @@ class Dashboard extends Component {
             <Card className="text-white bg-info">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right">
-                  <ButtonDropdown id='card1' isOpen={this.state.card1} toggle={() => { this.setState({ card1: !this.state.card1 }); }}>
+                  <ButtonDropdown id='card1a' isOpen={this.state.card1a} toggle={() => { this.setState({ card1a: !this.state.card1a }); }}>
                     <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
                     </DropdownToggle>
@@ -608,7 +608,7 @@ class Dashboard extends Component {
             <Card className="text-white bg-primary">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right">
-                  <Dropdown id='card2' isOpen={this.state.card2} toggle={() => { this.setState({ card2: !this.state.card2 }); }}>
+                  <Dropdown id='card2a' isOpen={this.state.card2a} toggle={() => { this.setState({ card2a: !this.state.card2a }); }}>
                     <DropdownToggle className="p-0" color="transparent">
                       <i className="icon-location-pin"></i>
                     </DropdownToggle>
@@ -632,7 +632,7 @@ class Dashboard extends Component {
             <Card className="text-white bg-warning">
               <CardBody className="pb-0">
                 <ButtonGroup className="float-right">
-                  <Dropdown id='card3' isOpen={this.state.card3} toggle={() => { this.setState({ card3: !this.state.card3 }); }}>
+                  <Dropdown id='card3a' isOpen={this.state.card3a} toggle={() => { this.setState({ card3a: !this.state.card3a }); }}>
                     <DropdownToggle caret className="p-0" color="transparent">
                       <i className="icon-settings"></i>
                     </DropdownToggle>
@@ -647,7 +647,7 @@ class Dashboard extends Component {
                 <div>Brewiere online</div>
               </CardBody>
               <div className="chart-wrapper" style={{ height: '70px' }}>
-                <Line data={cardChartData3} options={cardChartOpts3} height={70} />
+                <Line data={cardChartData3} options={cardChartOpts3} height={70} /> 
               </div>
             </Card>
           </Col>
