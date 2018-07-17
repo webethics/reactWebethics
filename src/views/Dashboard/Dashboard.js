@@ -647,7 +647,7 @@ class Dashboard extends Component {
                 <div>Brewiere online</div>
               </CardBody>
               <div className="chart-wrapper" style={{ height: '70px' }}>
-                <Line data={cardChartData3} options={cardChartOpts3} height={70} /> 
+                <Line data={cardChartData3} options={cardChartOpts3} height={70} />
               </div>
             </Card>
           </Col>
